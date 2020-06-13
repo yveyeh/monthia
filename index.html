@@ -8,10 +8,27 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <form>
-        <input id="text-id" name="text" type="text" placeholder="any text here please...">
+    <form class="card card-lifted">
+        <select id="month">
+            <option value="" selected="selected" disabled="disabled">Select Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <input type="text" id="year" placeholder="Enter Year. (ex: 2020)">
         <br><br>
-        <button onclick="outputMonthDays(3, 2016)">Output Month Days</button>
+        <div class="center mt-15">
+            <button class="btn-lifted" onclick="outputResults()">Submit</button>
+        </div>
     </form>
     <script src="assets/script.js"></script>
 </body>
