@@ -9,23 +9,28 @@
 </head>
 <body>
     <form class="card card-lifted">
-        <select id="month">
-            <option value="" selected="selected" disabled="disabled">Select Month</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-        </select>
-        <input type="text" id="year" placeholder="Enter Year. (ex: 2020)">
-        <br><br>
+        <div class="center mb-35">
+            <h3>Monthia</h3>
+            <p>Enter month and year below</p>
+        </div>
+        <div class="mb-35">
+            <select id="month">
+                <option value="" selected="selected" disabled="disabled">Select Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <input type="text" id="year" placeholder="Enter Year. (ex: 2020)">
+        </div>
         <div class="center mt-15">
             <button class="btn-lifted" onclick="outputResults()">Submit</button>
         </div>
