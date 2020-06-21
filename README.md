@@ -10,4 +10,4 @@
 
 ## License
 
-The [MIT](#) License.
+The [MIT](https://github.com/yveyeh/monthia/blob/master/LICENSE.md) License.
