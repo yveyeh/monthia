@@ -22,12 +22,15 @@ function computeInputs(month, year) {
 function getInputs() {
     var month = document.getElementById('month').value
     var year = document.getElementById('year').value
-    return [ month, year ]
+    return { 
+        month: month, 
+        year: year 
+    }
 }
 
 function outputResults() {
     var inputs = getInputs()
-    computeInputs(inputs[0], inputs[1])
+    computeInputs(inputs.month, inputs.year)
 }
 
 
