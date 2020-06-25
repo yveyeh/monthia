@@ -1,6 +1,12 @@
 
+/** 
+ * Element holding the report after submit.
+ */
+const report = document.querySelector('#report')
+
+/** */
 function computeInputs(month, year) {
-    var days = ""
+    let days = ""
     if (month >= 1 && month <= 12) {
         if (month == 4 || month == 6 || month == 9 || month == 11) {
             days = "30 days"
@@ -13,23 +19,28 @@ function computeInputs(month, year) {
         } else {
             days = "31 days"
         }
-        alert(days)
-    } else {
-        alert("Please, enter a valid month and year.")
+        report.innerHTML = days + "<br><br>"
+        report.style.color = "green"
+    } 
+    else {
+        report.innerHTML = "Please, enter a valid month and year.<br><br>"
+        report.style.color = "red"
     }        
 }
 
+/** */
 function getInputs() {
-    var month = document.getElementById('month').value
-    var year = document.getElementById('year').value
+    const month = document.getElementById('month').value
+    const year = document.getElementById('year').value
     return { 
         month: month, 
         year: year 
     }
 }
 
+/** */
 function outputResults() {
-    var inputs = getInputs()
+    let inputs = getInputs()
     computeInputs(inputs.month, inputs.year)
 }
 
