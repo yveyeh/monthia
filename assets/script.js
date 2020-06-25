@@ -1,4 +1,3 @@
-
 /** 
  * Element holding the report after submit.
  */
